@@ -2,15 +2,15 @@
   <div>
     <div class="left-padding">
       <img src="../assets/logo.png" alt="" class="logo" />
-      <div class="flex icon-field">
+      <div class="flex icon-field" @click="$route.push('/home')">
         <img src="../assets/home.png" alt="" class="icon" />
         <p>ホーム</p>
       </div>
-      <div class="flex icon-field">
+      <div class="flex icon-field" @click="$route.push('/profile')">
         <img src="../assets/profile.png" alt="" class="icon" />
         <p>プロフィール</p>
       </div>
-      <div class="flex icon-field">
+      <div class="flex icon-field" @click="$route.dispatch('/logout')">
         <img src="../assets/logout.png" alt="" class="icon" />
         <p>ログアウト</p>
       </div>
